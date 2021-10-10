@@ -1,0 +1,49 @@
+body {
+  font-family: $font-family-Roboto;
+  font-style: $font-style;
+  font-weight: $font-weight-400;
+  font-size: $font-size-14;
+  line-height: $line-height-171;
+  letter-spacing: $letter-spacing-003;
+  color: var(--primary-text-color);
+  background-color: var(--color-for-colored-backgraund);
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h2 {
+  color: var(--heading-text-color);
+  font-weight: $font-weight-700;
+  font-size: $font-size-36;
+  line-height: $line-height-117;
+  text-align: center;
+}
+img {
+  display: block;
+  // max-width: 100%;
+  // height: auto;
+}
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+}

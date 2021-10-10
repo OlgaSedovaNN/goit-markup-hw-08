@@ -1,0 +1,38 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  @include transition(opacity);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0, 5);
+    opacity: 0;
+  }
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: var(--color-for-colored-backgraund);
+  transition: transform $fortransitions, opacity $fortransitions;
+  opacity: 1;
+
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    min-width: 528px;
+    max-height: 609px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,26 @@
+.logo {
+  font-family: $font-family-Raleway;
+  font-style: $font-style;
+  font-weight: $font-weight-700;
+  font-size: $font-size-26;
+  line-height: $line-height-120;
+
+  &__first-part {
+    color: var(--accent-color);
+  }
+  &__second-part--header {
+    color: #000000;
+  }
+  &--header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
+    margin-left: 0;
+  }
+  &--footer {
+    margin-bottom: 20px;
+  }
+  &__second-part--footer {
+    color: var(--color-for-colored-backgraund);
+  }
+}

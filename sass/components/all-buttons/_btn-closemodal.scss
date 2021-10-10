@@ -1,0 +1,25 @@
+.btn-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--color-for-colored-backgraund);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include transition(border);
+
+  &--position {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  &__icon {
+    fill: #000000;
+    @include transition(fill);
+  }
+  &:hover &__icon {
+    fill: var(--accent-color);
+  }
+}

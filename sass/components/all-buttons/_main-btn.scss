@@ -1,0 +1,15 @@
+.main-btn {
+  color: var(--color-for-colored-backgraund);
+  background-color: var(--accent-color);
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0 solid #188ce8;
+  @include transition(background-color);
+  @extend %button;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
