@@ -19,6 +19,9 @@
     @media screen and (min-width: 480px) and (max-width: 1199px) {
       width: 450px;
     }
+    @media screen and (max-width: 480px) {
+      width: 290px;
+    }
   }
   &__btn {
     width: 200px;
@@ -45,7 +48,7 @@
     margin-left: 93px;
   }
   .footer-subscribe__input {
-    min-width: 358px;
+    width: 358px;
     margin-right: 12px;
     margin-bottom: 0;
   }

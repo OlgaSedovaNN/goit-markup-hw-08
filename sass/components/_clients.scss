@@ -5,11 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  padding-left: 15px;
 }
 .clients__item {
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin: 15px;
+  display: block;
   width: calc((100% - 4 * 15px) / 2);
 }
 .clients__link {
@@ -43,9 +42,13 @@
   }
   .clients__list {
     display: flex;
+    flex-wrap: nowrap;
     margin: 0;
   }
   .clients__item {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     margin-right: 30px;
     width: calc((100% - 10 * 15px) / 6);
 

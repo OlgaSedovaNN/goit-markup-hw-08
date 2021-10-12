@@ -4,11 +4,10 @@
   left: 0;
   display: flex;
   flex-direction: column;
+  padding: 40px;
   justify-content: space-between;
-  padding: 20px;
-
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: var(--color-for-colored-backgraund);
   transform: translateX(-100%);
   @include transition(transform);
@@ -26,7 +25,6 @@
   color: var(--heading-text-color);
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 40px;
   display: block;
   @include transition(color);
 
@@ -39,7 +37,6 @@
   }
 }
 .mobile-auth-nav {
-  padding-left: 40px;
   font-weight: $font-weight-500;
   line-height: $line-height-117;
 }
@@ -50,7 +47,6 @@
 }
 .mobile-mail {
   font-size: $font-size-24;
-  margin-bottom: 64px;
 }
 .mobile-auth-nav__link {
   color: inherit;

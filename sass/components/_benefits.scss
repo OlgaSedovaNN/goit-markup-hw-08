@@ -46,11 +46,7 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 767px) {
-  .benefits__icon {
-    width: 100%;
-  }
-}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits__list {
     display: flex;
@@ -58,9 +54,7 @@
     margin: -15px;
   }
   .benefits__item {
+    margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
-  }
-  .benefits__icon {
-    width: 100%;
   }
 }
