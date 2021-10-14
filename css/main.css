@@ -985,6 +985,8 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .portfolio-list--margin {
@@ -1012,7 +1014,6 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .card--position {
     margin: 15px;
-    max-width: 354px;
     width: calc((100% - 4 * 15px) / 2);
   }
 }
