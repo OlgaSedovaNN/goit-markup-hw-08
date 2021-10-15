@@ -39,6 +39,12 @@
                             <use href="./images/sprite.svg#icon-smartphone"></use>
                         </svg> +38 096 111 11 11</a></li>
             </ul>
+            <button type="button" class="menu-toggle menu-toggle--open js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="icon-menu" width="24" height="16">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     
@@ -162,7 +168,7 @@
                 </li>
                 <li class="card card--position">
                     <a class="card__link" href="">
-                        <div class="card__thumb"><img src="./images-portfolio/portfolio9-tab1-354.jpg" alt="печатающие на ноутбуке руки со страницей приложения" srcset="./images-portfolio/portfolio9-tab1-354.jpg 354w, ./images-portfolio/portfolio9-desk1-370.jpg 370w, ./images-portfolio/portfolio9-mob1-450.jpg 450w, .images-portfolio/portfolio9-tab2-708.jpg 708w, ./images-portfolio/portfolio9-desk2-740.jpg 740w, ./images-portfolio/portfolio9-mob2-900.jpg 900w" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, 100vw">
+                        <div class="card__thumb"><img src="./images-portfolio/portfolio9-tab1-354.jpg"  alt="печатающие на ноутбуке руки со страницей приложения" srcset="./images-portfolio/portfolio9-tab1-354.jpg 354w, ./images-portfolio/portfolio9-desk1-370.jpg 370w, ./images-portfolio/portfolio9-mob1-450.jpg 450w, ./images-portfolio/portfolio9-tab2-708.jpg 708w, ./images-portfolio/portfolio9-desk2-740.jpg 740w, ./images-portfolio/portfolio9-mob2-900.jpg 900w" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, 100vw">
                         <div class="card__overlay">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -246,7 +252,58 @@
     </div>
 </footer>
 
+<!-- мобильное меню -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle menu-toggle--close js-close-menu">
+        <svg class="icon-close-menu" width="19" height="19">
+            <use href="./images/sprite.svg#icon-close-menu"></use>
+        </svg>
+    </button>
+    <ul class="mobile-nav-list">
+        <li class="mobile-nav-list__item"> <a href="./index.html"
+                class="mobile-nav-list__link">Студия</a></li>
+        <li class="mobile-nav-list__item"> <a href="./portfolio.html" class="mobile-nav-list__link mobile-nav-list__link--current">Портфолио</a></li>
+        <li class="mobile-nav-list__item"> <a href="" class="mobile-nav-list__link">Контакты</a></li>
+    </ul>
+    <div class="mobile__contacts">
+        <ul class="mobile-auth-nav">
+            <li class="mobile-auth-nav__item mobile-tel"><a href="tel:+380961111111" class="mobile-auth-nav__link"> +38
+                    096 111 11 11</a></li>
+            <li class="mobile-auth-nav__item mobile-mail">
+                <a href="mailto:info@devstudio.com" class="mobile-auth-nav__link">
+                    info@devstudio.com</a>
+            </li>
 
+        </ul>
+        <ul class="mobile-social-links">
+            <li class="mobile-social-links__item">
+                <a class="mobile-social-links__link" href="">
+                    Instagram
+                </a>
+            </li>
+            <li class="mobile-social-links__item">
+                <a class="mobile-social-links__link" href="">
+                    Twitter
+                </a>
+            </li>
+            <li class="mobile-social-links__item">
+                <a class="mobile-social-links__link" href="">
+                    Facebook
+                </a>
+            </li>
+            <li class="mobile-social-links__item">
+                <a class="mobile-social-links__link" href="">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 
 </body>
 </html>

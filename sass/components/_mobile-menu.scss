@@ -50,6 +50,7 @@
 }
 .mobile-auth-nav__link {
   color: inherit;
+  margin-bottom: 64px;
 }
 .mobile-social-links {
   font-size: $font-size-18;
@@ -57,6 +58,7 @@
 
   display: flex;
   justify-content: center;
+  padding-bottom: 8px;
 }
 .mobile-social-links__item {
   padding-right: 10px;
