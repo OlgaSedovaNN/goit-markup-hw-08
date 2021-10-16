@@ -11,11 +11,11 @@
   }
 }
 .benefits__item {
-  margin-right: 30px;
+  margin-bottom: 30px;
   width: 100%;
 
   &:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {

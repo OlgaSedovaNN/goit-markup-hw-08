@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vw;
-  padding: 40px;
+  height: 100vh;
+
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   @include transition(opacity);
@@ -13,11 +13,13 @@
     opacity: 0;
     pointer-events: none;
   }
-  &.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0, 5);
-    opacity: 0;
-  }
 }
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0, 5);
+  opacity: 0;
+}
+
 .modal {
   position: absolute;
   top: 50%;

@@ -317,8 +317,8 @@ ul {
 .hero-section__text {
   color: var(--color-for-colored-backgraund);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0;
@@ -350,6 +350,13 @@ ul {
   .hero-section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero-desx2x-3200.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-desx2x-3200.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section__text {
+    font-size: 44px;
+    line-height: 1.4;
   }
 }
 
@@ -386,12 +393,12 @@ ul {
 }
 
 .benefits__item {
-  margin-right: 30px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
 .benefits__item:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -1149,8 +1156,7 @@ ul {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vw;
-  padding: 40px;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1526,9 +1532,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 8px;
 }
 
